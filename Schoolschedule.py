@@ -5,7 +5,7 @@ import re
 import csv
 import pprint
 
-with open('your csv file directory', 'a', newline='') as f:
+with open('your csv file path', 'a', newline='') as f:
     writer = csv.writer(f)
     
     from urllib3.exceptions import InsecureRequestWarning
