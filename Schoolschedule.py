@@ -5,7 +5,7 @@ import re
 import csv
 import pprint
 
-with open('G:\Practice Programming\FP\Schedule.csv', 'a', newline='') as f:
+with open('your csv file directory', 'a', newline='') as f:
     writer = csv.writer(f)
     
     from urllib3.exceptions import InsecureRequestWarning
@@ -43,9 +43,6 @@ with open('G:\Practice Programming\FP\Schedule.csv', 'a', newline='') as f:
             if class_soup[num+1] =='2':
                 csvlist.extend(['2019/' + lines + ' 11:00','2019/' + lines + ' 12:30'])
             
-            if class_soup[num+1] =='3':
-                            csvlist.extend(['2019/' + lines + ' 13:50','2019/' + lines + ' 15:00'])
-
             if class_soup[num+1] =='3':
                 csvlist.extend(['2019/' + lines + ' 13:30','2019/' + lines + ' 15:00'])
             
