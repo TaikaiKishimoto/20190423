@@ -5,7 +5,7 @@ import re
 import csv
 import pprint
 
-with open('your csv file path', 'a', newline='') as f:
+with open('Path\Schedule.csv', 'a', newline='') as f:
     writer = csv.writer(f)
     
     from urllib3.exceptions import InsecureRequestWarning
@@ -29,7 +29,7 @@ with open('your csv file path', 'a', newline='') as f:
 
     for num,lines in enumerate(class_soup):
         m = re.search(r'(\d{1})/(\d)',str(lines))
-        if m != None:
+        if m:
             csvlist = []
             csvlist.append(str(title_strip[1] + title_strip[2]))
             csvlist.extend([str(url),' '])
