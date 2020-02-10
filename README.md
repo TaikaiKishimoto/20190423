@@ -1,2 +1,2 @@
 # Scheduler
-convert class schedule to CSV file
+授業スケジュールを取得しCSVファイルに出力します。
